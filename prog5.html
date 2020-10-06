@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*type casting with boolean*/
+        var a,b,c;
+        a=10;
+        b=0;
+        c="hello";
+        d="";
+        document.writeln(Boolean(a));
+        document.writeln(Boolean(b));
+        document.writeln(Boolean(c));
+        document.writeln(Boolean(d));
+        /*
+            In javascript 0 is considerd as false and any other number is considered as tru
+            A string is considered is true and an empty string is considered as false
+        */
+        document.writeln("<br>");
+
+        /*Typecasting with number*/
+        var p,q,r,t,u;
+        p="12.45";
+        q="125";
+        r=Number(p)+Number(q);
+        document.writeln(r);
+        t=true;
+        u=false;
+        document.writeln(Number(t));
+        document.writeln(Number(u));
+        /*
+            A valid string can be converted into number type
+            numeric equals to true is 1 and false is 0
+        */
+
+        document.writeln("<br>");
+
+        /* converting into strings*/
+        var x,y,z;
+        x=12;
+        y=12.45;
+        z=x+y;
+        document.writeln(x+y+z);
+        document.writeln(String(x)+String(y)+String(z));
+    
+        
+    </script>
+</body>
+</html>

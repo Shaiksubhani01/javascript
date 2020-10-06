@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* parseInt(), parseFloat(), eval()*/
+        var price,qty,bill;
+        price=parseInt(prompt("Price","0"));
+        qty=parseFloat(prompt("Quantity","0"));
+        bill=price*qty;
+        document.writeln(bill);
+
+        /*
+            parseInt() converts string into integer, It can extract integer from a valid complex string
+            Ex: 123N.s
+            parseFloat() converts a string into float
+            eval() converts string into either integer ot float but can't convert complex string
+        */
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* reading data from the user*/
+        
+            var a;
+            a=prompt("Enter your name...","igate")
+            if(a==null)
+                document.writeln("Wy have you cancelled..");
+            else if(a=="igate")
+                document.writeln("Have to give your name..");
+            else
+                document.writeln("Welcome "+a);
+
+        /*
+            prompt is used to read the data from the user using input dialogue
+            It takes two optional arguments that are "prompt message" and "default value" 
+            It always return string
+            null is returned when cancel button is selected 
+        */
+    </script>
+</body>
+</html>

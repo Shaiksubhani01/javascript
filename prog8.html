@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            box-sizing: border-box;
+            width: 80%;
+            margin: 50px;
+            padding: 50px;
+            background-color: blueviolet;
+            color: white;
+        }
+        .con p{
+            font: 1em Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        var name,sal,hra,da,gross;
+        name=prompt("Your Name Please..");
+        sal=eval(prompt("Salary:"));
+        hra=sal*12/100;
+        da=sal*15/100;
+        gross=sal+hra+da;
+    </script>
+
+    <div class="con">
+        <script>
+            document.writeln("<p>Name:"+name+"</p>")
+            document.writeln("<p>Salary:"+sal+"</p>")
+            document.writeln("<p>HRA:"+hra+"</p>")
+            document.writeln("<p>DA:"+da+"</p>")
+            document.writeln("<p>Gross:"+gross+"</p>")
+        </script>
+    </div>
+    <script>
+        /* demo of template string */
+        var str=`<div class="con" style="background-color: cadetblue;">
+            <p>Name:${name}</p>
+            <p>Salary:${sal}</p>
+            <p>HRA:${hra}</p>
+            <p>DA:${da}</p>
+            <p>Gross:${gross}</p>
+        </div>`;
+        document.writeln(str);
+        /*
+            using back ticks and place holders we can write complex
+            html and css code and assigned to a string and can be printed
+
+        */
+    </script>
+</body>
+</html>
