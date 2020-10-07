@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum()
+        {
+            let sm=0;
+            for(let i=0;i<arguments.length;i++)
+                sm=sm+arguments[i];
+            return sm;
+            
+        }
+        s=sum(10,20,30,40,50,56,89,90);
+        document.writeln("Sum:"+s);
+
+        /*
+            var args can be accessed by the function using the keyword "arguments"
+            It is an array with all the arguments
+        */
+
+
+    </script>
+</body>
+</html>

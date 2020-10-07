@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(a,b)
+        {
+            let s=a+b;
+            document.writeln("Sum:"+s+"<br>");
+        }
+        function sum(a,b,c)
+        {
+            let s=a+b+c;
+            document.writeln("Sum:"+s+"<br>");
+        }
+        sum(10,20,30);
+        sum(10,20)              //NaN
+        sum(10,20,30,40,50);    //60
+
+        /*
+            finction overloading is not possible
+            if excess number of arguments are given then other arguments are omitted
+            if less arguments are given then non-supplied arguments are assigned with undefined
+        */
+    </script>
+</body>
+</html>
