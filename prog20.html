@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* IIFE Immediately Invole function execution*/
+
+        var x=function(){
+            document.writeln("igate solutions<br>");
+        };
+        x();
+        //----------------------
+        var x=function(){document.writeln("igate solutions<br>");};
+        x();
+        //--------------------------
+        (function(){document.writeln("igate solutions<br>");})();
+        //----------------------------
+    
+        (function(){
+            document.writeln("HTML<br>");
+            document.writeln("CSS<br>");
+            document.writeln("Bootstrap<br>");
+        })();
+       
+        //------------------------
+
+        (function(amt,time,int){
+            let si=amt*time*int/100;
+            let tot=amt+si;
+            document.writeln("Simple interest:"+si+"<br>");
+            document.writeln("Total:"+tot);
+        })(10000,6,1.50);
+        
+
+    </script>
+</body>
+</html>

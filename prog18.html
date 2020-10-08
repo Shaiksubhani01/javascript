@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+            sending functions as arguments
+
+        */
+
+        function one()
+        {
+            document.writeln("hello world");
+        }
+        function two()
+        {
+            document.writeln("igate solutions");
+        }
+
+        igate(one,two);
+
+        function igate(x,y)
+        {
+            x();
+            y();
+        }
+    </script>
+</body>
+</html>

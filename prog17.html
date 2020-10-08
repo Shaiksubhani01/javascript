@@ -6,6 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        /*
+            references to functions
+        */
+        function display()
+        {
+            document.writeln("igate soltuions<br>");
+        }
+        var x=display; //assigning the referece
+        x();
+        display();
+
+        //---------------------------------------
+
+        var y=function(){
+            document.writeln("Incredible India")
+        };
+
+        y();
+    </script>
 </body>
 </html>
