@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            box-sizing: border-box;
+            width: 50%;
+            padding: 5%;
+            background-color: blueviolet;
+            color: white;
+            margin: 10px auto;
+            text-align: center;
+            font: 2em Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var m=["jan","feb","mar","apr","may","jun","july","aug","sep","oct","nov","dec"];
+        var d=["sun","mon","tue","wed","thu","fri","sat"]
+        var x=new Date();
+        document.writeln(x.toString()+"<br>");
+        document.writeln(x+"<br>");
+        document.writeln(x.getDate()+"<br>");
+        document.writeln(m[x.getMonth()]+"<br>");
+        document.writeln(x.getFullYear()+"<br>");
+        document.writeln(d[x.getDay()]+"<br>");
+        document.writeln(x.getTime()+"<br>");
+        document.writeln(x.toLocaleDateString()+"<br>");
+        document.writeln(x.toLocaleTimeString()+"<br>");
+        var d1=new Date();
+        var d2=new Date(2020,10-1,13,0,0,0);
+        if(d1==d2)
+             document.writeln("You are at the movement<br>");
+        else if(d2<d1)
+            document.writeln("It is past<br>");
+        else
+            document.writeln("It is future<br>");
+    </script>
+
+    <div class="box">
+            <script>
+                d=new Date();
+                document.writeln(d.toLocaleTimeString())
+            </script>
+    </div>
+</body>
+</html>

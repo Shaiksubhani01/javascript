@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       /*  Arrays  
+            in javascript an array is an object that is associated with 
+            data varaibales, methods and properties
+       */
+
+        var x=[];
+        x[0]=10;
+        x[1]=20;
+        x[2]=30;
+        x[3]=40;
+
+        for(let i=0;i<x.length;i++)
+            document.writeln(x[i]+"<br>");
+
+        document.writeln("<hr>");
+
+        var y=[10,20,30,40,50];
+
+        for(let i=0;i<y.length;i++)
+            document.writeln(y[i]+"<br>");
+
+        document.writeln("<hr>");
+
+        var z=[12,"hello",12.45,true,345]
+
+        for(let i=0;i<z.length;i++)
+            document.writeln(z[i]+"<br>");
+
+        document.writeln("<hr>");
+
+        var a=new Array();
+        a[0]="hello";
+        a[1]=12.45;
+        a[2]=true;
+        a[3]=null;
+        a[4]="A";
+        for(let i=0;i<a.length;i++)
+            document.writeln(a[i]+"<br>");
+
+        document.writeln("<hr>");
+
+        var b=new Array(10,20,30,40,50);
+        for(let i=0;i<b.length;i++)
+            document.writeln(b[i]+"<br>");
+
+        document.writeln("<hr>");
+
+        var c=[];
+        c["apple"]=150;
+        c["guava"]=40;
+        c["pomegranate"]=120;
+        c["pineapple"]=200;
+        document.writeln(c["guava"]);
+
+        document.writeln("<hr>");
+
+        /* methods of java script */
+
+        var e=[10,20,30,40];
+        document.writeln(e.toString()+"<br>");
+        document.writeln(e+"<br>");
+        e.push(55);
+        document.writeln(e+"<br>");
+        e.pop();
+        document.writeln(e+"<br>");
+        e.reverse()
+        document.writeln(e+"<br>");
+        e.sort();
+        document.writeln(e+"<br>");
+        e.shift(); //removes the first element
+        document.writeln(e+"<br>");
+        e.unshift(44); //adds the element at the beginning
+        document.writeln(e+"<br>");
+        delete e[2]; //deletes an element
+        document.writeln(e+"<br>");
+        e[2]=60;
+        document.writeln(e+"<br>");
+        var s=e.join("-");
+        document.writeln(s);
+        
+   </script>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+</body>
+</html>

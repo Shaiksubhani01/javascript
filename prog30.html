@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var con={
+            first:function(){
+                document.writeln("In first function<br>");
+            },
+            second:function(){
+                document.writeln("In second function<br>");
+            },
+            third:function(){
+                document.writeln("In third function<br>");
+            }
+        };
+
+        con.first();
+        con.second();
+        con.third();
+
+        for(let ref in con)
+             con[ref]();
+
+        //---------------------------------------
+
+        var a=function(){
+            document.writeln("igate solutions<br>");
+        };
+        var b=function(){
+            document.writeln("Cloud99 Labs<br>");
+        };
+        var c=function(){
+            document.writeln("Incredible India<br>");
+        };
+
+        var obj={
+            igate:a,
+            cloud:b,
+            india:c
+        };
+        obj.igate();
+        obj.cloud();
+        obj.india();
+
+        for(let key in obj)
+        {
+            obj[key]();
+        }
+    </script>
+</body>
+</html>

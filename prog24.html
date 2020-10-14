@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //var s="igate solutions";
+        var s=new String("igate solutions");
+        document.writeln(s+"<br>");
+        document.writeln(s.toUpperCase()+"<br>");
+        document.writeln(s.charAt(0)+"<br>");
+        document.writeln(s.indexOf("s")+"<br>");
+        document.writeln(s.substring(6,s.length)+"<br>");
+
+        var str=prompt("Your Name:");
+        if(str.toLowerCase()=="igate")
+            document.writeln("Congrats<br>");
+        else
+            document.writeln("Who are you?<br>");
+    </script>
+</body>
+</html>

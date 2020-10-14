@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var obj={
+            place:"kavali",
+            dist:"Nellore",
+            pin:524201,
+            disp:function(){
+                document.writeln(this.place+"<br>");
+                document.writeln(this.dist+"<br>");
+                document.writeln(this.pin+"<br>");
+            }
+        };
+        obj.disp();
+
+        //------------------------------------------
+        var x=function(){
+            document.writeln(this.name+"<br>");
+            document.writeln(this.place+"<br>");
+            document.writeln(this.sal+"<br>");
+        };
+
+        var emp1={
+            name:"Ravi kumar",
+            place:"Nellore",
+            sal:12000,
+            disp:x
+        }
+        var emp2={
+            name:"Naveen kumar",
+            place:"Nellore",
+            sal:11500,
+            disp:x
+        }
+
+        emp1.disp();
+        emp2.disp();
+
+    </script>    
+</body>
+</html>

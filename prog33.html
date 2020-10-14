@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=function(){
+            document.writeln(this.name+"<br>");
+            document.writeln(this.place+"<br>");
+            document.writeln(this.sal+"<br>");
+        };
+
+        var emp1={
+            name:"Ravi kumar",
+            place:"Nellore",
+            sal:12000,
+         }
+        var emp2={
+            name:"Naveen kumar",
+            place:"Nellore",
+            sal:11500,
+        }
+
+        x.call(emp1);
+        x.call(emp2);
+    </script>
+</body>
+</html>
