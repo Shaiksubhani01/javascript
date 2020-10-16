@@ -7,10 +7,11 @@
 </head>
 <body>
     <script>
-        var x=function(){
+        var x=function(street){
             document.writeln(this.name+"<br>");
             document.writeln(this.place+"<br>");
             document.writeln(this.sal+"<br>");
+            document.writeln(street);
         };
 
         var emp1={
@@ -24,8 +25,8 @@
             sal:11500,
         }
 
-        x.call(emp1);
-        x.call(emp2);
+        x.call(emp1,"M.G.Road");
+        x.call(emp2,"S.P.B.Road");
     </script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student={
+            input:function(name,branch,sem){
+                this.name=name;
+                this.branch=branch;
+                this.sem=sem;
+            },
+            output:function(){
+                document.writeln(this.name+"<br>");
+                document.writeln(this.branch+"<br>");
+                document.writeln(this.sem+"<br>");
+            }
+        };
+        student.input("Ravi","EC",4);
+        student.output();
+    </script>
+</body>
+</html>

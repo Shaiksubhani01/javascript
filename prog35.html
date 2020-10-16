@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=function(m,p,c){
+            document.writeln(this.name+"<br>");
+            document.writeln(this.sem+"<br>");
+            document.writeln("Total"+(m+p+c)+"<br>");
+        };
+
+        var stud1={
+            name:"Lokesh",
+            sem:3,
+            //disp:x
+        };
+        
+        var stud2={
+            name:"Radha",
+            sem:4,
+            //disp:x
+        };
+
+        //stud1.disp()
+        //stud2.disp()
+
+        x.call(stud1,45,67,89);
+        x.apply(stud2,[88,77,90]);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var stud={
+            _name:"",
+            _branch:"",
+            _sem:"",
+            set name(val){
+                this._name=val;
+            },
+            set bra(val){
+                this._branch=val;
+            },
+            set sem(val){
+                this._sem=val;
+            },
+            get name(){
+                return this._name;
+            },
+            get bra(){
+                return this._branch;
+            },
+            get sem(){
+                return this._sem;
+            }
+        };
+
+        stud.name="Lavanya";
+        stud.bra="CSE";
+        stud.sem=4;
+
+        document.writeln(stud.name+"<br>");
+        document.writeln(stud.bra+"<br>");
+        document.writeln(stud.sem+"<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       
+        var stud1={
+            name:"ravi",
+            branch:"CSE"
+        };
+        //var stud2=stud1; //copying refernce
+
+        var stud2={};
+        Object.assign(stud2,stud1); //clonning
+
+        stud2.branch="EC";
+
+        document.writeln(stud1.name+"<br>");
+        document.writeln(stud1.branch+"<br>");
+
+        document.writeln(stud2.name+"<br>");
+        document.writeln(stud2.branch+"<br>");
+
+        stud1=null; //deleting an object
+
+        document.writeln(stud1.name+"<br>");
+        document.writeln(stud1.branch+"<br>");
+    </script>
+</body>
+</html>
