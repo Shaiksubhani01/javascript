@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //constructor function
+       /*
+            when we call the function using new operator then
+            script engine automatically create an empty object with
+            this and return 
+       */
+
+       function stud_factory(name,branch,sem){
+            //var this={};
+            this.name=name;
+            this.branch=branch;
+            this.sem=sem;
+            //return this;
+        };
+
+        var ob1=new stud_factory("Ravi","CSE",3);
+        var ob2=new stud_factory("Lalitha","EC",5);
+
+        document.writeln(ob1.name+"<br>");
+        document.writeln(ob1.branch+"<br>");
+        document.writeln(ob1.sem+"<br>");
+
+        document.writeln(ob2.name+"<br>");
+        document.writeln(ob2.branch+"<br>");
+        document.writeln(ob2.sem+"<br>");  
+    </script>
+</body>
+</html>

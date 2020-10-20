@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ES6
+        class Hello
+        {
+            constructor(){
+                document.writeln("Hello world<br>");
+            }
+        }
+        var ob=new Hello();
+
+        //------------------------------------
+
+        class Num
+        {
+            constructor(x,y){
+                this.x=x;
+                this.y=y;
+            }
+            display(){
+                document.writeln(this.x+"<br>");
+                document.writeln(this.y+"<br>");
+            }
+        }
+
+        var ob1=new Num(100,200);
+        ob1.display();
+
+        //------------------------------------
+
+        class Box
+        {
+            setData(b,w,h){
+                this.b=b;
+                this.w=w;
+                this.h=h;
+            }
+            getVolume(){
+                return this.b*this.w*this.h;
+            }
+        }
+
+        var ob2=new Box();
+        ob2.setData(3,4,5);
+        document.writeln(ob2.getVolume()+"<br>");
+
+        //--------------------------------------
+
+        class First
+        {
+            one(){
+                document.writeln("One of first<br>");
+            }
+        }
+        class Second extends First{
+            two(){
+                document.writeln("two of second<br>");
+            }
+        }
+        var ob3=new Second();
+        ob3.one();
+        ob3.two();
+
+        //----------------------------
+
+        class Cube
+        {
+            constructor(b){
+                this.b=b;
+            }
+            dispVolume(){
+                document.writeln("Volume of cube"+this.b*this.b*this.b+"<br>");
+            }
+        }
+
+        class Box2 extends Cube{
+            constructor(b,w,h)
+            {
+                super(b);
+                this.w=w;
+                this.h=h;
+            }
+            dispVolume(){
+                document.writeln("Volume of box"+this.b*this.w*this.h+"<br>");
+            }
+        }
+
+        var ob4=new Cube(3);
+        ob4.dispVolume();
+
+        var ob5=new Box2(4,5,6);
+        ob5.dispVolume();
+        
+    </script>
+</body>
+</html>

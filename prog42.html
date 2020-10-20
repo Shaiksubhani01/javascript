@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //de-structuring an array
+        var x=[45,67,89,90];
+        var [a,b,c,d]=x;
+        document.writeln(a+"<br>");
+        document.writeln(b+"<br>");
+        document.writeln(c+"<br>");
+        document.writeln(d+"<br>");
+
+        //de-structuring an object
+        var emp={
+            ename:"scott",
+            gender:"Male",
+            sal:12000
+        };
+        var {ename:en,gender:gen,sal:s}=emp;
+        document.writeln(en+"<br>");
+        document.writeln(gen+"<br>");
+        document.writeln(s+"<br>");
+    </script>
+</body>
+</html>

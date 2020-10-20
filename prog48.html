@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var c=["red","green","blue","black","pink","gray"]
+        var i=0;
+        function hello(){
+            
+            x=window.document.getElementsByTagName("body");
+            x[0].style.backgroundColor=c[i];
+            i++;
+            if(i==6)
+                i=0;
+        }
+
+        /*  toggle colors
+        var flag=1;
+        function hello()
+        {
+            x=window.document.getElementsByTagName("body");
+            if(flag==1)
+            {
+                x[0].style.backgroundColor="green";
+                flag=0;
+            }
+            else
+            {
+                x[0].style.backgroundColor="red";
+                flag=1;
+            }
+        }
+        */
+        
+    </script>
+
+    <input type="button" value="Click me" onclick="hello();">
+</body>
+</html>

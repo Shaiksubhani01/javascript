@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #car{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="./images/image1.jpg" alt="" id="car">
+    <script>
+        var c=2;
+        function change()
+        {
+            if(c==5)
+                c=1;
+            x=window.document.getElementById("car")
+            x.setAttribute("src","./images/image"+c+".jpg");
+            c++;
+        }
+
+        var handler=setInterval(change,2000);
+    </script>
+
+
+    <!--
+    <input type="button" value="Next" onclick="change();">
+    -->
+</body>
+</html>

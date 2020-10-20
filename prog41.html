@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        function employee(ename,gen,sal){
+            
+            this.ename=ename;
+            this.gen=gen;
+            this.sal=sal;
+            this.display=function(){
+                document.writeln(this.ename+"<br>");
+                document.writeln(this.gen+"<br>");
+                document.writeln(this.sal+"<br>");
+            }
+           
+        }
+
+        var e1=new employee("Lahari","Female",12000);
+        e1.display();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //exloring set
+        var s=new Set();
+        s.add("java");
+        s.add("Python");
+        s.add("HTML");
+        s.add("java");
+        for(let v of s){
+            document.writeln(v+"<br>");
+        }
+
+        if(s.has("Python"))
+            document.writeln("Existed<br>");
+        else
+            document.writeln("Not existed<br>");
+
+        document.writeln(s.size+"<br>");
+
+        //exploring map
+        var m=new Map();
+        m.set("scott",12000);
+        m.set("Black",15000);
+        m.set("John",34000);
+        document.writeln(m.get("Black")+"<br>");
+
+        for(let k of m.keys()){
+            document.writeln(k+"<br>");
+        }
+
+        for(let v of m.values()){
+            document.writeln(v+"<br>");
+        }
+
+        for(let [x,y] of m.entries()){
+            document.writeln(x+":"+y+"<br>");
+        }
+    </script>
+</body>
+</html>
