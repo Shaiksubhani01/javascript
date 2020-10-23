@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10%;
+            text-align: center;
+            background-color: blueviolet;
+            font:3em Arial;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 id="disp"></h1>
+    </div>
+    <script>
+        //to set the time as heading inner text
+        function showtime()
+        {
+            var ob=new Date();
+            var str=ob.getHours()+":"+ob.getMinutes()+":"+ob.getSeconds();
+            document.getElementById("disp").innerHTML=str;
+        }
+        //executes showtime for every 1 sec to update the time
+        var h=setInterval(showtime,1000);
+       
+       //should toggle to start and stop the time
+        var flag=true;
+        document.getElementsByClassName("box")[0].onclick=function(){
+            if(flag)
+            {
+                clearInterval(h);
+                flag=false;
+            }
+            else
+            {
+                h=setInterval(showtime,1000);
+                flag=true;
+            }
+        };
+    </script>   
+</body>
+</html>

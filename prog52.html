@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5%;
+            background-color: darkgoldenrod;
+            border:1px solid black;
+            text-align: center;
+        }
+        [type=button]{
+            width: 100px;
+            height: 30px;
+            background-color: white;
+            margin: 4px;
+            border: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <input type="button" value="First" onclick='alert("Clicked on button1");'>
+        <input type="button" value="Second" onclick="process();">
+        <input type="button" value="Third" id="b3">
+        <input type="button" value="Fourth" id="b4">
+    </div>
+    <script>
+        //even handling
+        function process()
+        {
+            alert("Clicked on second button");
+        }
+
+        var b3=document.getElementById("b3");
+        b3.onclick=function(){
+            alert("Clicked on button3");
+        };
+
+        var b4=document.getElementById("b4");
+        b4.addEventListener("click",special)
+        function special(){
+            alert("Clicked on button4");
+        }
+    </script>
+</body>
+</html>

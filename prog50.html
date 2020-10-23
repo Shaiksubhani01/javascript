@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 100%;
+            background-color: blueviolet;
+            box-sizing: border-box;
+            padding: 5%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        
+    </div>
+    <script>
+        var box=document.getElementById("box");
+
+        var h=document.createElement("h1");
+        h.innerHTML="igate solutions";
+        box.appendChild(h);
+
+        var p=document.createElement("p");
+        p.innerHTML="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quisquam at explicabo voluptates enim iure dignissimos consequatur mollitia soluta necessitatibus minima obcaecati voluptas nesciunt porro, placeat neque cupiditate magni eum.";
+        box.appendChild(p);
+
+        var ol=document.createElement("ol");
+       
+        var l1=document.createElement("li");
+        l1.innerHTML="C-Language";
+        ol.appendChild(l1);
+
+        var l2=document.createElement("li");
+        l2.innerHTML="Java";
+        ol.appendChild(l2);
+
+        var l3=document.createElement("li");
+        l3.innerHTML="Python";
+        ol.appendChild(l3);
+
+        box.appendChild(ol);
+
+        //inserting an element
+        var l4=document.createElement("li");
+        l4.innerHTML="Golang";
+        ol.insertBefore(l4,l2);
+
+        //delete an element
+        ol.removeChild(l2);
+
+        //replacing
+        var l5=document.createElement("li");
+        l5.innerHTML="BCPL";
+        ol.replaceChild(l5,l3);
+
+    </script>
+</body>
+</html>

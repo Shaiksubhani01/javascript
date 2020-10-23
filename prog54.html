@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100%;
+            height: auto;
+         }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <table cellspacing=5 cellpadding=10 align="center">
+            <tr>
+                <td>First</td>
+                <td><input type="text" id="txt1"></td>
+            </tr>
+            <tr>
+                <td>Second</td>
+                <td><input type="text" id="txt2"></td>
+            </tr>
+            <tr>
+                <td>Sum</td>
+                <td>
+                    <!--<input type="text" id="txt3" onfocus="calc();" onblur="clearme();">-->
+                    <input type="text" id="txt3">
+                </td>
+            </tr>
+        </table>
+        <script>
+            var f=document.getElementById("txt1");
+            var s=document.getElementById("txt2");
+            var sm=document.getElementById("txt3");
+            /*
+            sm.onfocus=function(){
+                sm.value=parseInt(f.value)+parseInt(s.value);
+            };
+            sm.onblur=function(){
+                s.value="";
+                f.value="";
+                sm.value="";
+            };
+            */
+            
+            function calc(){
+                sm.value=parseInt(f.value)+parseInt(s.value);
+            }
+
+            function clearme(){
+                s.value="";
+                f.value="";
+                sm.value="";
+            }
+
+            sm.addEventListener("focus",calc);
+            sm.addEventListener("blur",clearme);
+
+        </script>
+    </div>
+</body>
+</html>
